@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chessboard</title>
+</head>
+<body>
+    <div id="mainChessBoard"></div>
+    <script>
+        for (var i = 0; i < 64; i++) {
+            document.getElementById('mainChessBoard').appendChild(document.createElement('div'));
+        }
+        document.getElementById('mainChessBoard').style.cssText="width:160px;height:160px;border:1px solid black;";
+        var divArray = document.getElementById('mainChessBoard').getElementsByTagName('div');
+        for (var j = divArray.length-1; j >= 0; j--) {
+            divArray[j].style.cssText = "height:20px;width:20px;float:left;";
+            divArray[j].style.backgroundColor = parseInt((j / 8) + j) % 2 == 0 ? 'white' : "black";
+        }
+    </script>
+</body>
+</html>

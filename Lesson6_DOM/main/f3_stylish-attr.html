@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function 3</title>
+</head>
+<body>
+
+<h1>Here is <i>f4</i>!</h1>
+<p>Please enter in prompt tag name.</p>
+<p>Hasn't work with attr yet. You need to <i>hardcode</i>them in the function call</p>
+
+<titanic style="float:none"></titanic>
+
+<ninja color="black" visibility="hidden"></ninja>
+<lego></lego>
+<!--<lego style="display:block"></lego>-->
+<chucknorris speed="5"></chucknorris>
+<!--<chucknorris speed="Infinity"></chucknorris>-->
+
+<script>
+    var tag = prompt('Please enter tag name: ');
+
+    function attributeMagic() {
+        if (arguments.length === 1) {
+            return document.getElementsByTagName(tag)[0].getAttribute(arguments[0]);
+        } else if (arguments.length === 2) {
+            document.getElementsByTagName(tag)[0].setAttribute(arguments[0], arguments[1]);
+            return document.getElementsByTagName(tag)[0];
+        } else {
+            throw new Error('Fail! The function needs at least one argument');
+        }
+    }
+
+console.log(attributeMagic('color', 'red'));
+console.log(attributeMagic('visibility'));
+
+    //   выдает значение аттрибута или ставит его значение.
+    //
+    //     Чтение.
+    //     Что имеется в виду - Допустим есть элемент:
+    //
+    //     <titanic style="float:none"></titanic>
+    //
+    //     Если передать в функцию 'style' - она должна выдать "float:none"
+    //
+    //   <ninja color="black" visibility="hidden"></ninja>
+    //
+    //     Если передать в функцию 'color' - она должна выдать "black"
+    //
+    //   Установка.
+    //     Что имеется в виду - Допустим есть элемент:
+    //
+    //     <lego></lego>
+    //
+    //   Если передать в функцию два параметра - аттрибут и значение, то нода должна выглядеть
+    //
+    //   <lego style="display:block"></lego>
+    //
+    //
+    //     Если значение этого аттрибута уже задано, устанавливается новое значение.
+    //
+    //     Было:
+    // <chucknorris speed="5"></chucknorris>
+    //
+    //     После вызова функции с передачей аттрибута и значения (speed Infinity):
+    // <chucknorris speed="Infinity"></chucknorris>
+    </script>
+</body>
+</html>

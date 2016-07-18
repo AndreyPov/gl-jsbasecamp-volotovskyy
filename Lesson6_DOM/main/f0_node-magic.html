@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function 0</title>
+</head>
+<body>
+
+    <div class="wrapper" id="page">
+        <h1>Para-pa-pa! <i>f0</i></h1>
+        <p id="main-question">Who let the dog out?</p>
+        <ul class="answers">
+            <li id="first">Woof!</li>
+            <li id="second">Woooooof!</li>
+            <li id="third">Wof-Wof!</li>
+        </ul>
+    </div>
+
+    <script>
+//  принимает строку селектор и возвращает:
+//  - undefined - если ничего не найдено
+//  - найденую ноду - если она одна
+//  - массив нод - если их несколько
+//  - если в функцию передать ноду, функция возвращает ее тип (Node, Text, Comment etc)
+
+        function nodeMagic(node) {
+            var result;
+//          is it ok? Or 'switch case' should work better here?
+            if ( typeof node === 'string' ) {
+                result = document.querySelectorAll(node);
+                if ( result.length === 1 ) {
+                    result = result[0];
+                } else if ( result.length === 0 ) {
+                    result = undefined;
+                }
+            } else if ( node instanceof Node ) {
+                result = node.nodeType;
+            } else {
+                throw new Error("Please, try some different input data, Bro!");
+            }
+            return result;
+        }
+        var answerVariant = nodeMagic('li'),
+            correctAnswer = nodeMagic('#second');
+
+        console.log(nodeMagic("Pug"));         //undefined
+        console.log(correctAnswer);            //single node
+        console.log(answerVariant);            //array of nodes
+        console.log(nodeMagic(correctAnswer)); //type of node
+    </script>
+
+</body>
+</html>

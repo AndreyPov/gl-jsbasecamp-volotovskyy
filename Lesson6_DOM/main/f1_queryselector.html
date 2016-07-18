@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function 1</title>
+</head>
+<body>
+
+    <h1>Hello, Kolya!</h1>
+    <div id="task"> I have <i>f1</i> for you!</div>
+    <div id="elf">
+        <ul id="quiver">
+            <li class="arrows">silver</li>
+            <li class="arrows">fire</li>
+            <li class="arrows">magic</li>
+        </ul>
+    </div>
+
+
+
+    <script>
+//  принимает строку селектор и возвращает:
+//  - undefined - если ничего не найдено
+//  - найденую ноду - если она одна
+//  - первую найденную ноду - если их несколько
+
+        function select(arg){
+            if (arg) {
+                return document.querySelector(arg);
+            } else {
+                return 'undefined';
+            }
+        }
+
+        console.log(select());       //undefined
+        console.log(select('#elf')); //single node
+        console.log(select('div'));  //fist node if multiple nodes
+
+
+    </script>
+</body>
+</html>
