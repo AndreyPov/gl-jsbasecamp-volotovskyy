@@ -14,18 +14,18 @@
     
 ## Mentors
 
-| Name:            | Subjects: | Thanks:  |
-| ---------- | ------ | ------- |
-| Viktor Shevchenko | JS basics, Async JS, OOP | Thank you for promises & fetch miracle |
-| Maksym Koretskyi | Objects, OOP, OOP-practice | You've motivated me to learn js in depth |
+| Name:              | Subjects: | Thanks:  |
+| ------------------ | ------ | ------- |
+| Viktor Shevchenko  | JS basics, Async JS, OOP | Thank you for promises & fetch miracle |
+| Maksym Koretskyi   | Objects, OOP, OOP-practice | You've motivated me to learn js in depth |
 | Oleksandr Bardanov | Functions, AJAX | Thanks for AJAX lesson and great 'last challenge' homework |
-| Mykola Sorokin| DOM, Debug, MVC | Thank you for fun, epic quest and easter eggs in our tasks |
+| Mykola Sorokin     | DOM, Debug, MVC | Thank you for fun, epic quest and easter eggs in our tasks |
 
 ## Managers
 
 |    Name:         | Thanks: |
 | ----------------| ---------------- |
-| Tatiana Tolkach | Thank for pizza, tech talks, informing other suppor! Good job! |
+| Tatiana Tolkach | Thank for pizza, tech talks, up to date information and other suppor! Good job! |
 | Tatiana Khriapina | You have opened GlobalLogic's doors for me. This is inexpressible feeling! |
 
 ## Feedback
