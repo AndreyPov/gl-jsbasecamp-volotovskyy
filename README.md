@@ -25,7 +25,7 @@
 
 |    Name:         | Thanks: |
 | ----------------| ---------------- |
-| Tatiana Tolkach | Thank for pizza, tech talks, up to date information and other suppor! Good job! |
+| Tatiana Tolkach | Thank for pizza, tech talks, up to date information and other support! Good job! |
 | Tatiana Khriapina | You have opened GlobalLogic's doors for me. This is inexpressible feeling! |
 
 ## Feedback
